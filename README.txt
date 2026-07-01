@@ -53,11 +53,11 @@ Diagram: `docs/images/network-architecture.png`
 
 ```
 EnvSetup.sh
-   ↓
+    ↓
 EnvCheck.sh
 
 AppInstall.sh
-   ↓
+    ↓
 AppCheck.sh
 ```
 
@@ -227,10 +227,10 @@ brma-app:latest
 
 ```bash
 docker run \
-  --name brma-app \
-  -p 5000:5000 \
-  --env-file .env \
-  brma-app:latest
+   --name brma-app \
+   -p 5000:5000 \
+   --env-file .env \
+   brma-app:latest
 ```
 
 If a `docker-compose.yml` is provided:
